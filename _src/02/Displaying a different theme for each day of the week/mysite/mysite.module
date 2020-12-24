@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implementation of hook_init().
+ */
+function mysite_init() {
+  global $custom_theme;
+
+  // An array of themes for each day of the week.
+  // These themes do not have to be enabled.
+  $themes = array();
+  $themes[0] = 'garland';
+  $themes[1] = 'minnelli';
+  $themes[2] = 'bluemarine';
+  $themes[3] = 'pushbutton';
+  $themes[4] = 'chameleon';
+  $themes[5] = 'marvin';
+  $themes[6] = 'mytheme';
+
+  // Get the current day of the week in numerical form.
+  $day = date("w");
+
+  // Override current theme based on day of the week.
+  $custom_theme = $themes[$day];
+
+  // Override current theme randomly.
+  // $custom_theme = $themes[array_rand($themes)];
+}
+

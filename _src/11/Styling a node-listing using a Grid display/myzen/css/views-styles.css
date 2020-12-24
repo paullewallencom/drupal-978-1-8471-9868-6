@@ -1,0 +1,14 @@
+/* $Id: views-styles.css,v 1.1 2009/08/12 04:25:15 johnalbin Exp $ */
+
+/**
+ * @file
+ * Views Styling
+ */
+
+/* Product gallery */
+.view-product-gallery table {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+

@@ -1,0 +1,6 @@
+name = Mytheme
+description = My new sub-theme (CSS, phptemplate, 3-col)
+base theme = garland
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/mytheme.css

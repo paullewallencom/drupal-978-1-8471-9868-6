@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * Override or insert variables into node templates of all
+ * enabled themes.
+ *
+ * @param $vars
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered (name of the .tpl.php file.)
+ */
+function mysite_preprocess(&$vars, $hook) {
+  // Cache author roles.
+  static $author_role_classes = '';
+
+  // Modify variables for the node template file.
+  if ($hook == 'node') {
+    $user = user_load($vars['node']->uid);
+
+    foreach ($user->roles as $rid => $role) {
+      $author_role_classes .= ' author-role-' . $rid;
+      // Only display custom roles; ignore anonymous and 
+      // authenticated user roles.
+      if ($rid > 2) {
+        $roles[] = $role;
+      }
+    }
+    if (isset($roles)) {
+      $vars['roles'] = $roles;
+    }
+  }
+  // Modify variables for the page template file.
+  else if ($hook == 'page') {
+    $vars['author_role_classes'] = $author_role_classes;
+  }
+}
+

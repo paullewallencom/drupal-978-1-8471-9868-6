@@ -1,0 +1,5 @@
+name = My theme
+description = My custom theme
+core = 6.x
+engine = phptemplate
+

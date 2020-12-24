@@ -1,0 +1,73 @@
+/* $Id: navigation.css,v 1.5 2009/11/04 19:42:41 johnalbin Exp $ */
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}
+
+/**
+ * Override default Nice Menu styles. We are only 
+ * targeting one particular block which contains a nice menu
+ * with direction set to 'right'.
+ */
+#block-nice_menus-1 ul.nice-menu {
+  margin-left: 0.6em;
+  padding-left: 0;
+}
+
+#block-nice_menus-1 ul.nice-menu ul li,
+#block-nice_menus-1 ul.nice-menu-right,
+#block-nice_menus-1 ul.nice-menu-right li,
+#block-nice_menus-1 ul.nice-menu-right ul ul {
+  width: 13.5em;
+}
+
+#block-nice_menus-1 ul.nice-menu li,
+#block-nice_menus-1 ul.nice-menu-right li.menuparent,
+#block-nice_menus-1 ul.nice-menu-right li li.menuparent {
+  background-color: #80AA00;
+}
+
+#block-nice_menus-1 ul.nice-menu-right li.menuparent:hover,
+#block-nice_menus-1 ul.nice-menu-right li.over {
+  background-color: #F0B900;
+}
+

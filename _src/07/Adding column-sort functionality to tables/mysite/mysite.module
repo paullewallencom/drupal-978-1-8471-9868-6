@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implementation of hook_init().
+ */
+function mysite_init() {
+  // The path to the mysite module.
+  $path = drupal_get_path('module', 'mysite');
+
+  // Include the dataTables plug-in.
+  drupal_add_js($path . '/js/dataTables/media/js/jquery.dataTables.min.js');
+
+  // Include the default CSS file that comes with the 
+  // plug-in.
+  drupal_add_css($path . '/js/dataTables/media/css/demo_table.css');
+
+  // Add our custom Javascript file.
+  drupal_add_js($path . '/js/tablesort.js');
+}
+

@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function mysite_form_alter(&$form, &$form_state, $form_id) {
+  // Devel module debug code to retrieve information about
+  // the form.
+  // dpm($form_id);
+  // dpm($form);
+
+  $path = drupal_get_path('theme', 'myzen');
+  if (isset($form['#node']) && $form['#node']->type .'_node_form' == $form_id && isset($form['buttons'])) {
+    $form['buttons']['submit']['#type'] = $form['buttons']['preview']['#type'] = 'image_button';
+    $form['buttons']['submit']['#src'] = $path . '/images/save.png';
+    $form['buttons']['preview']['#src'] = $path . '/images/preview.png';
+  }
+}
+

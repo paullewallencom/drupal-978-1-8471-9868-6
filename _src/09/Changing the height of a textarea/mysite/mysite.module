@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function mysite_form_alter(&$form, &$form_state, $form_id) {
+//  dpm($form_id);
+//  dpm($form);
+
+  if (isset($form['#node']) && $form['#node']->type . '_node_form' == $form_id) {
+    $form['body_field']['body']['#rows'] = 5;
+  }
+}
+

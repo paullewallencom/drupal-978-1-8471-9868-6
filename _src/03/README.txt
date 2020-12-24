@@ -1,0 +1,1 @@
+The version of Zen upon which the code in this chapter has been based on is 6.2-beta. It is always recommended that the latest version be used - there might be minor bug-fixes, but all the recipes should work fine.

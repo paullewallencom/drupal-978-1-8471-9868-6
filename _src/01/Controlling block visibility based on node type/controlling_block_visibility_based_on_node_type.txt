@@ -1,0 +1,10 @@
+<?php
+  // Array of allowed types.
+  $types = array('blog', 'story'); 
+
+  // Check if the current page is a node.
+  if ((arg(0) == 'node') && is_numeric(arg(1))) {
+    $node = node_load(arg(1));
+    return in_array($node->type, $types);
+  }
+?>

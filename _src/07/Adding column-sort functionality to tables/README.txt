@@ -1,0 +1,1 @@
+The sample HTML to be added to the node is available in the file named "Sample node.html.txt". The dataTables plug-in has not been packaged in these files and will need to be installed separately as per the instructions in the recipe.

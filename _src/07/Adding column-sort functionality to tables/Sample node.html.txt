@@ -1,0 +1,47 @@
+<table id="distance-table" style="width: 500px;">
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Destination</th>
+      <th>Distance (km)</th>
+      <th>Time by Air (hours)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>Chennai</td>
+      <td>New Delhi</td>
+      <td>2095</td>
+      <td>2.5</td>
+    </tr>
+    <tr class="even">
+      <td>Chennai</td>
+      <td>Kolkata</td>
+      <td>1676</td>
+      <td>2</td>
+    </tr>
+    <tr class="odd">
+      <td>Chennai</td>
+      <td>Mumbai</td>
+      <td>1329</td>
+      <td>1.5</td>
+    </tr>
+    <tr class="even">
+      <td>Mumbai</td>
+      <td>New Delhi</td>
+      <td>1407</td>
+      <td>2</td>
+    </tr>
+    <tr class="odd">
+      <td>Mumbai</td>
+      <td>Chennai</td>
+      <td>1329</td>
+      <td>1.5</td>
+    </tr>
+    <tr class="even">
+      <td>Mumbai</td>
+      <td>Kolkata</td>
+      <td>1987</td>
+      <td>2.5</td>
+    </tr>
+</table>
